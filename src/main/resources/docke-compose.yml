@@ -1,0 +1,10 @@
+version: '3.1'
+service:
+  spboot-rabitmq:
+    image: rabbitmq:3-management
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    enviroment:
+      - RABBITMQ_DEFAULT_USER=ayaznacafli
+      - RABBITMQ_DEFAULT_PASS=ayaz1997
